@@ -216,6 +216,12 @@ config TARGET_MX6ULL_ALIENTEK_NAND
 	select DM
 	select DM_THERMAL
 
+config TARGET_MX6ULL_WJL_EMMC
+	bool "Support mx6ull_wjl_emmc"
+	select MX6ULL
+	select DM
+	select DM_THERMAL
+
 config TARGET_SECOMX6
 	bool "secomx6 boards"
 
@@ -292,5 +298,7 @@ source "board/freescale/mx6dqscm/Kconfig"
 source "board/freescale/mx6sxscm/Kconfig"
 source "board/freescale/mx6ull_alientek_emmc/Kconfig"
 source "board/freescale/mx6ull_alientek_nand/Kconfig"
+
+source "board/freescale/mx6ull_wjl_emmc/Kconfig"
 
 endif
